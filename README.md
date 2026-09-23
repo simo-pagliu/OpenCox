@@ -14,7 +14,7 @@ This repository is an umbrella. The code lives in two submodules:
 | Submodule | Contents |
 |-----------|----------|
 | [OpenCox-RP2350](https://github.com/simo-pagliu/OpenCox-RP2350) | MicroPython firmware for the Pico 2 W. Records accelerometer, GPS and stroke data to microSD as CSV. |
-| [OpenCoxUI](https://github.com/simo-pagliu/OpenCoxUI) | Flask web app and analysis pipeline. Reads those CSVs and produces the analysis. |
+| [OpenCox-WebUI](https://github.com/simo-pagliu/OpenCox-WebUI) | Flask web app and analysis pipeline. Reads those CSVs and produces the analysis. |
 
 The two are joined only by the CSV log format, which the firmware writes and
 the analysis pipeline reads. They are versioned separately so the boat
@@ -104,12 +104,12 @@ Each submodule is a normal git repository. Commit and push inside it as usual,
 then record the new pointer here:
 
 ```bash
-cd OpenCoxUI
+cd OpenCox-WebUI
 git add -A && git commit -m "..." && git push
 
 cd ..
-git add OpenCoxUI
-git commit -m "Bump OpenCoxUI"
+git add OpenCox-WebUI
+git commit -m "Bump OpenCox-WebUI"
 git push
 ```
 

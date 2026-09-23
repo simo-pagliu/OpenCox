@@ -1,6 +1,6 @@
-[submodule "OpenCoxUI"]
-	path = OpenCoxUI
-	url = https://github.com/simo-pagliu/OpenCoxUI.git
+[submodule "OpenCox-WebUI"]
+	path = OpenCox-WebUI
+	url = https://github.com/simo-pagliu/OpenCox-WebUI.git
 [submodule "OpenCox-RP2350"]
 	path = OpenCox-RP2350
 	url = https://github.com/simo-pagliu/OpenCox-RP2350.git
